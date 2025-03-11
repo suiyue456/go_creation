@@ -82,7 +82,7 @@ func SetupApp() *fiber.App {
 	})
 
 	// 配置日志中间件
-	// 记录所有HTTP请求
+	// 记录所有HTTP请求111
 	app.Use(logger.New(logger.Config{
 		// 自定义日志格式
 		Format: "${time} ${status} - ${method} ${path}\n",
